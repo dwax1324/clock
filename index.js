@@ -26,7 +26,7 @@ init = () => {
 
         hour.style.transform = `rotate(${hours * 30 + 180 + min / 2}deg)`;
         //clock2
-        clock.innerHTML = `${hours}　　`;
+        clock.innerHTML = `${hours < 10 ? `0${hours}　　` : `${hours}　　`}`;
         clock2.innerHTML = `${min < 10 ? `0${min}` : `${min}`}`;
     }, 1);
 };
